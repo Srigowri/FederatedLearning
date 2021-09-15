@@ -1,0 +1,9 @@
+.Dockerfile
+
+*.log
+*.zip
+*.tar
+*.jar
+*.rar
+
+
