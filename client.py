@@ -5,7 +5,7 @@ ipaddress = "localhost"
 port = 3000
 sock.connect((ipaddress,port))
 print("Connected to server")
-message_to_server = "hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1,hello this is client1"
+message_to_server = "Hello from client"
 message_to_server = pickle.dumps(message_to_server)
 sock.sendall(message_to_server)
 print("Sent the ML model back")
@@ -23,11 +23,10 @@ while True:
 print("Client program server message",server_message)
 print("---------------")
 
-message_to_server1 = "abcdefghijklmonpqrstuvwxyz,abcdefghijklmonpqrstuvwxyz,abcdefghijklmonpqrstuvwxyz,abcdefghijklmonpqrstuvwxyz,abcdefghijklmonpqrstuvwxyz,abcdefghijklmonpqrstuvwxyz,abcdefghijklmonpqrstuvwxyz,abcdefghijklmonpqrstuvwxyz"
+message_to_server1 = "Hello from same client, testing multiple messages"
 message_to_server1 = pickle.dumps(message_to_server1)
 sock.sendall(message_to_server1)
 print("Sent the ML model back")
-
 
 
 
